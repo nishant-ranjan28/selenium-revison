@@ -1,6 +1,6 @@
 package oops;
 
-public class methods {
+public class Methods {
 
 	public static void main(String[] args) {
 		grades("John", 91);
@@ -17,7 +17,7 @@ public class methods {
 		}else 
 			grade = "C";
 		
-		System.out.println("Grade of " + name + " is: " + grade);  
+		System.out.println("Grade of " + name + " is: " + grade);
 	}
 
 }
