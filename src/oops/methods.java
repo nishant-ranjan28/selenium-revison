@@ -17,7 +17,7 @@ public class methods {
 		}else 
 			grade = "C";
 		
-		System.out.println("Grade of " + name + " is: " + grade); 
+		System.out.println("Grade of " + name + " is: " + grade);  
 	}
 
 }
