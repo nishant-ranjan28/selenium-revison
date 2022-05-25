@@ -12,6 +12,7 @@ public class Car {
 	private String model;
 
 	//year
+	public int year;
 
 	//behavior
 	public static void increaaseSpeed() {
@@ -40,6 +41,19 @@ public class Car {
 
 	public void setModel(String model) {
 		this.model = model;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		if(year >1900) {
+			this.year = year;
+		}else {
+			System.out.println("This is not a valid year");
+		}
+
 	}
 
 
