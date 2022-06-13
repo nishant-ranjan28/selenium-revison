@@ -86,5 +86,7 @@
 	<classpathentry kind="lib" path="/Users/nishantranjan/projects/selenium-revison/selenium-java-4.2.1/lib/opentelemetry-semconv-1.14.0-alpha.jar"/>
 	<classpathentry kind="lib" path="/Users/nishantranjan/projects/selenium-revison/selenium-java-4.2.1/lib/reactive-streams-1.0.3.jar"/>
 	<classpathentry kind="lib" path="/Users/nishantranjan/projects/selenium-revison/selenium-java-4.2.1/lib/slf4j-api-1.7.36.jar"/>
+	<classpathentry kind="lib" path="/Users/nishantranjan/projects/selenium-revison/drivers/jars/hamcrest-core-2.2.jar"/>
+	<classpathentry kind="lib" path="/Users/nishantranjan/projects/selenium-revison/drivers/jars/junit-4.13.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
