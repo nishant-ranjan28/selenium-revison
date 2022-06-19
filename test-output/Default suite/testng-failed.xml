@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="handleCalender.SelectDate">
+      <class name="testCases.verifyLoginFlow2">
         <methods>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-          <include name="g"/>
+          <include name="loginFb"/>
+          <include name="browserSetup"/>
         </methods>
-      </class> <!-- handleCalender.SelectDate -->
+      </class> <!-- testCases.verifyLoginFlow2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
