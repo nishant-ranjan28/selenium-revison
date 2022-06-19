@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-16T16:53:25 IST" name="Default suite" finished-at="2022-06-16T16:53:46 IST" duration-ms="21073">
+  <suite started-at="2022-06-19T20:01:16 IST" name="Default suite" finished-at="2022-06-19T20:01:29 IST" duration-ms="12886">
     <groups>
     </groups>
-    <test started-at="2022-06-16T16:53:25 IST" name="Default test" finished-at="2022-06-16T16:53:46 IST" duration-ms="21073">
-      <class name="handleCalender.SelectDate">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:handleCalender.SelectDate@56528192]" started-at="2022-06-16T16:53:25 IST" name="beforeTest" finished-at="2022-06-16T16:53:30 IST" duration-ms="4247" status="PASS">
+    <test started-at="2022-06-19T20:01:16 IST" name="Default test" finished-at="2022-06-19T20:01:29 IST" duration-ms="12886">
+      <class name="testCases.verifyLoginFlow2">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:testCases.verifyLoginFlow2@49c386c8]" started-at="2022-06-19T20:01:16 IST" name="browserSetup" finished-at="2022-06-19T20:01:23 IST" duration-ms="7014" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="g()[pri:0, instance:handleCalender.SelectDate@56528192]" started-at="2022-06-16T16:53:30 IST" name="g" finished-at="2022-06-16T16:53:43 IST" duration-ms="13167" status="PASS">
+        </test-method> <!-- browserSetup -->
+        <test-method signature="loginFb()[pri:0, instance:testCases.verifyLoginFlow2@49c386c8]" started-at="2022-06-19T20:01:24 IST" name="loginFb" finished-at="2022-06-19T20:01:29 IST" duration-ms="5385" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- g -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:handleCalender.SelectDate@56528192]" started-at="2022-06-16T16:53:43 IST" name="afterTest" finished-at="2022-06-16T16:53:46 IST" duration-ms="3613" status="PASS">
+        </test-method> <!-- loginFb -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testCases.verifyLoginFlow2@49c386c8]" started-at="2022-06-19T20:01:29 IST" name="quitBrowser" finished-at="2022-06-19T20:01:29 IST" duration-ms="415" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- handleCalender.SelectDate -->
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- testCases.verifyLoginFlow2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
