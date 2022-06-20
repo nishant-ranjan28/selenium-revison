@@ -17,10 +17,9 @@ public class loginPage2 {
 	
 	WebDriver driver;
 	
-	public loginPage2(WebDriver ldriver) {
-		this.driver = ldriver;
+	public loginPage2(WebDriver driver) {
+		this.driver = driver;
 	}
-	
 	
 	
 	@FindBy(how = How.ID, using = "email") @CacheLookup WebElement username;
