@@ -21,20 +21,15 @@ public class verifyLoginFlow2 {
 	WebDriver driver;
 	String baseUrl;
 
-
 	@BeforeTest
 	public void browserSetup() {
-
 		driver = BrowserInitialisation.startBrowser("firefox", "https://www.facebook.com");
-
 	}
 
 	@Test
 	public void loginFb() {
-
 		loginPage2 loginPage =  PageFactory.initElements(driver, loginPage2.class);
 		loginPage.loginTo("admin", "admin123");
-
 	}
 	
 	@AfterTest

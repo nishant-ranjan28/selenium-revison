@@ -8,6 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import pages.ProductPage;
 import pages.SwagDemoLoginPage;
+import screenshots.PageScreenshot;
 
 /**
  * @author nishantranjan
@@ -18,7 +19,7 @@ public class AddToCart {
 	static WebDriver driver;
 	static String url = "https://www.saucedemo.com/";
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		browser();
 		login();
@@ -35,15 +36,17 @@ public class AddToCart {
 	}
 
 
-	public static void login() {
+	public static void login() throws InterruptedException {
 		SwagDemoLoginPage loginPage = new SwagDemoLoginPage(driver);
 
 		loginPage.inputUser("standard_user");
 		loginPage.inputPass("secret_sauce");
 		loginPage.buttonClick();
+		
+		PageScreenshot.TakeFullScreenshot(driver);
 	}
 	
-	public static void verifyCartPage() {
+	public static void verifyCartPage() throws InterruptedException {
 		
 		ProductPage pg = new ProductPage(driver);
 		
