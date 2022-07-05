@@ -3,21 +3,22 @@ package webDriver;
 import java.time.Duration;
 import java.util.List;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 public class SelectMethod {
 	
 	WebDriver driver = null;
 	String URL;
 
-	@Before
+	@BeforeTest
 	public void setUp() throws Exception {
 		driver = new FirefoxDriver();
 		
@@ -32,7 +33,7 @@ public class SelectMethod {
 		
 		WebElement element = driver.findElement(By.id("carselect"));
 		Select sel = new Select(element);
-		
+//		
 		Thread.sleep(2000);
 		System.out.println("Select Benz by value");
 		sel.selectByValue("benz");
@@ -57,7 +58,7 @@ public class SelectMethod {
 		
 	}
 
-	@After
+	@AfterTest
 	public void tearDown() throws Exception {
 		driver.quit();
 	}
