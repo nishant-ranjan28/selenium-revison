@@ -32,7 +32,12 @@ public class assertDemo {
 		System.out.println(actualTitle);
 
 
-		Assert.assertNotEquals(expectedTitle, actualTitle);
+		Assert.assertEquals(expectedTitle, actualTitle);
+	}
+	
+	@Test
+	public void g() {
+		Assert.assertEquals(12, 13, "Count did not match");
 	}
 
 

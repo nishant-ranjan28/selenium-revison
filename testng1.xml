@@ -7,9 +7,8 @@
   </listeners>
 
   <test thread-count="5" name="Test">
-    <classes>
-      <class name="testNGListeners.TestNGListenersDemo"/>	
-      <class name="testNGListeners.TestNGListenersDemo2"/>
-    </classes>
+    <packages>
+      <package name="testNGListeners"/>
+    </packages>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
