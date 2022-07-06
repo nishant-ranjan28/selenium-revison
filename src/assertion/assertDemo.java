@@ -27,11 +27,8 @@ public class assertDemo {
 	@Test
 	public void f() {
 		driver.get(baseUrl);
-
 		actualTitle = driver.getTitle();
 		System.out.println(actualTitle);
-
-
 		Assert.assertEquals(expectedTitle, actualTitle);
 	}
 	
