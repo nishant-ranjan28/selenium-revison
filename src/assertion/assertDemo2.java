@@ -8,7 +8,7 @@ public class assertDemo2 {
 	@Test
 	public void test() {
 		String str = "Nishant";
-		Assert.assertTrue(str.contains("Ranjan"), "NAmes not matching ");
+		Assert.assertTrue(str.contains("Ranjan"), "Names not matching ");
 	}
 
 }
