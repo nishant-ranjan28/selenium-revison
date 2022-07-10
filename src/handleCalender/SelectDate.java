@@ -26,7 +26,6 @@ public class SelectDate {
 		wt = new GenericMethod(driver);
 
 		//Manage the browser
-
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 	}

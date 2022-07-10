@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="assertion.SoftAssertionDemo">
+      <class name="alert.SwitchAlert">
         <methods>
-          <include name="hardAssert"/>
-          <include name="testSoft"/>
+          <include name="test2"/>
+          <include name="tearDown"/>
+          <include name="test1"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- assertion.SoftAssertionDemo -->
+      </class> <!-- alert.SwitchAlert -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
