@@ -10,7 +10,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class SendKeysDemo {
+public class SendKeysDemo2 {
 	
 	WebDriver driver;
 	String baseUrl;
@@ -27,12 +27,11 @@ public class SendKeysDemo {
 	public void sendKey() {
 		driver.get(baseUrl);
 		
-		driver.findElement(By.xpath("//a[normalize-space()='Sign In']")).click();
-		driver.findElement(By.id("email")).sendKeys("Hello");
-		driver.findElement(By.id("password")).sendKeys("tetst");
-//		driver.findElement(By.xpath("//input[@value='Login']")).sendKeys(Keys.RETURN);
+		driver.findElement(By.id("openwindow")).sendKeys(Keys.COMMAND + "a");
 		
-		driver.findElement(By.id("password")).sendKeys(Keys.TAB);
+		//using chord
+		
+		//driver.findElement(By.id("openwindow")).sendKeys(Keys.chord(Keys.COMMAND + "a"));
 		
 		
 	}
