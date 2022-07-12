@@ -93,5 +93,6 @@
 	<classpathentry kind="lib" path="/Users/nishantranjan/projects/selenium-revison/drivers/jars/selenium-shutterbug-1.6.jar"/>
 	<classpathentry kind="lib" path="/Users/nishantranjan/projects/selenium-revison/drivers/jars/extentreports-3.1.5.jar"/>
 	<classpathentry kind="lib" path="/Users/nishantranjan/projects/selenium-revison/drivers/jars/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="/Users/nishantranjan/projects/selenium-revison/drivers/jars/webdrivermanager-5.2.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,13 +1,16 @@
 package mouseHover;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.safari.SafariDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class mouseHoverDemo {
 
@@ -15,7 +18,8 @@ public class mouseHoverDemo {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		driver = new FirefoxDriver();
+		
+		driver = new ChromeDriver();
 
 		//Maximise browser window
 		driver.manage().window().maximize();
