@@ -2,15 +2,15 @@ package keypress;
 
 import java.time.Duration;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class SendKeysDemo2 {
+public class SendKeysDemo3 {
 	
 	WebDriver driver;
 	String baseUrl;
@@ -27,13 +27,8 @@ public class SendKeysDemo2 {
 	public void sendKey() {
 		driver.get(baseUrl);
 		
-		//driver.findElement(By.id("openwindow")).sendKeys(Keys.COMMAND + "a");
-		
-		//using chord
-		//driver.findElement(By.id("openwindow")).sendKeys(Keys.chord(Keys.COMMAND + "a"));
-		
-		String selectAll = Keys.chord(Keys.COMMAND, "a");
-		driver.findElement(By.id("openwindow")).sendKeys(selectAll);
+		Actions action = new Actions(driver);
+		action.keyDown(Keys.COMMAND).sendKeys("a").keyUp(Keys.COMMAND).perform();
 		
 		
 	}
