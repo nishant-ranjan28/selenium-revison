@@ -4,6 +4,7 @@
   <test thread-count="2" parallel="tests" name="Test on firefox(failed)">
     <parameter name="browserName" value="safari"/>
     <classes>
+<<<<<<< HEAD
       <class name="parallerBrowser.MultiBrowserDemo">
         <methods>
           <include name="test1"/>
@@ -11,6 +12,13 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- parallerBrowser.MultiBrowserDemo -->
+=======
+      <class name="pages.SearchPageFactory">
+        <methods>
+          <include name="clickFlightTab"/>
+        </methods>
+      </class> <!-- pages.SearchPageFactory -->
+>>>>>>> a18d7621fcd7ffef77c6f1eb95d2cf6aaae48697
     </classes>
   </test> <!-- Test on firefox(failed) -->
 </suite> <!-- Failed suite [Suite1] -->
