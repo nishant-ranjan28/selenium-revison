@@ -4,7 +4,7 @@
 <suite name="Suite1" parallel="tests" thread-count="2">
 
   <test name="Test on firefox"> 
-  <parameter name="browserName" value="firefox"></parameter>
+  <parameter name="browserName" value="safari"></parameter>
     <classes>
       <class name="parallerBrowser.MultiBrowserDemo"/>
     </classes>
